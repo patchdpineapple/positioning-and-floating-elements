@@ -33,7 +33,6 @@ button {
   text-decoration: none;
   padding: 0;
   background-color: transparent;
-  color: var(--nav-buttons);
 }
 
 button:focus {
@@ -43,3 +42,205 @@ button:focus {
 fieldset {
   border: none;
 }
+
+/* PRESET */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLING */
+
+/* Navigation bar */
+.header-nav {
+    z-index: 10;
+    position: fixed;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.ul-nav {
+    width: 100vw;
+    height: 42px;
+    padding: 4px 15px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.ul-nav > li:first-child{
+    width: 210px;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.icon-menu, .icon-search {
+    width: 16px;
+    height: 16px;
+    color: #000;
+}
+
+.ul-nav li a {
+    font-size: 14.25px;
+    color: black;
+}
+
+
+.ul-nav li:nth-child(2) {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.logo-nyt{
+   width: 195px;
+   height: 26.5px;
+}
+
+.ul-nav li:last-child {
+    position: absolute;
+    top: 4px;
+    right: 25px;
+}
+
+.ul-nav li:last-child button {
+    height: 32px;
+    background: #457293;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #326891;
+    color: white;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Main Content */
+main {
+    height: 2000px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 90px;
+}
+
+main header {
+    display: inline;
+    padding: 10px;
+}
+
+main header h1 i{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+.links-container {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ebebeb;
+}
+
+.links-container ul {
+    justify-content: flex-start;
+}
+
+.links-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.links-container a:hover {
+    background: transparent;
+}
+
+.icon-call {
+    background-image: url(https://www.nytimes.com/vi-assets/static-assets/icon-whatsapp-17x17-000-b100d38495ee541e2e4f30bcaf9bfe0c.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+}
+
+.links-container li:nth-child(6) a{
+    background: transparent;
+    border: none;
+}
+
+.links-container li:nth-child(7) a{
+    color: black;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.icon-chat {
+    border: 1px solid black;
+    border-radius: 4px;
+    min-width: 36px;
+    min-height: 24px;
+    padding: 4px;
+    position: relative;
+    font-style: normal;
+    
+}
+
+.icon-chat span {
+    font-family: Roboto;
+    font-size: 11px;
+}
+
+.icon-chat::before {
+    border-color: rgb(102, 102, 102) transparent;
+    border-style: solid;
+    bottom: -7px;
+    border-width: 6px 0px 0px 8px;
+    content: "";
+    display: block;
+    left: 15px;
+    position: absolute;
+    width: 0px;
+}
+
+.icon-chat::after {
+    border-color: rgb(255, 255, 255) transparent;
+border-style: solid;
+border-width: 6px 0px 0px 6px;
+bottom: -6px;
+content: "";
+display: block;
+left: 16px;
+position: absolute;
+width: 0px;
+}
+
+.icon-chat:hover::before {
+    border-color: lightgray transparent;
+    
+}
+
+
+
+.icon-chat:hover {
+    border-color: lightgray;
+}
+
+
+
+
+
+
