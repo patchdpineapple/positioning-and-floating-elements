@@ -4,6 +4,7 @@
 :root {
   --anchor: #0077c5;
   --body: #eceef1;
+  --rand: #ff0000;
 }
 
 /* RESET */
@@ -50,6 +51,13 @@ fieldset {
     align-items: center;
 }
 
+.flex-col-center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* STYLING */
 
 /* Navigation bar */
@@ -57,6 +65,7 @@ fieldset {
     z-index: 10;
     position: fixed;
     border-bottom: 1px solid #e2e2e2;
+    background-color: white;
 }
 
 .ul-nav {
@@ -129,7 +138,6 @@ main {
 }
 
 main header {
-    display: inline;
     padding: 10px;
 }
 
@@ -188,6 +196,15 @@ main header h1 i{
     text-decoration: none;
 }
 
+.icon-badge-path {
+    stroke: black;
+    fill: white;
+}
+
+.icon-badge-path:hover {
+    stroke: lightgray;
+}
+
 .icon-chat {
     border: 1px solid black;
     border-radius: 4px;
@@ -233,12 +250,79 @@ width: 0px;
     
 }
 
-
-
 .icon-chat:hover {
-    border-color: lightgray;
+    border-color: #d3d3d3;
 }
 
+.image-info-container {
+    width: 945px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.image-info-container * {
+    font-family: serif;
+    font-size: 13px;
+    line-height: 1.25rem;
+    color: rgb(83, 83, 83);
+}
+
+.image-info-container > div {
+    max-width: 720px;
+    margin-top: 5px;
+}
+
+.image-info-container span {
+    margin-right: 7px;
+}
+
+.image-info-container span:nth-child(2) {
+    color: #888;
+    letter-spacing: 0.01em;
+    font-size: .8rem;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.author-container {
+    margin-bottom: 30px;
+}
+
+.author-container * {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+
+.author-container  div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 600px;
+}
+
+.author-container div span:first-child {
+    margin-bottom: 15px;
+}
+
+.author-container div span:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+.author-container a {
+    text-decoration: underline;
+    text-decoration-color: rgb(184, 184, 184);
+}
+
+.author-container a:hover {
+    text-decoration: none;
+}
 
 
 
