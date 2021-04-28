@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-  --anchor: #0077c5;
+  --anchor: #326891;
   --body: #eceef1;
   --rand: #ff0000;
 }
@@ -133,8 +133,7 @@ fieldset {
 
 /***** Main Content *****/
 /* Header */
-main {
-    height: 2000px;
+main article {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -316,7 +315,7 @@ width: 0px;
 
 .author-container div span:nth-child(2) {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 100;
     color: #333;
 }
 
@@ -413,7 +412,9 @@ width: 0px;
 .subscribe-container {
     width: 100%;
     line-height: 19px;
-    margin: 25px 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
 }
 
 .small-divider1, .small-divider2 {
@@ -532,6 +533,281 @@ width: 0px;
 
 .text-container2{
     border-top: none;
+}
+
+/* Bottom links */
+.article-bottom-links-container {
+    width: 600px;
+    font-size: 11px;
+    color: #333;
+}
+
+.article-bottom-links-container a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.article-bottom-links-container a:hover {
+    text-decoration: none;
+}
+
+.article-bottom-links-container > div:nth-child(2) {
+    margin: 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-read-comments {
+    width: 330px;
+    background: #457293;
+    border: 1px solid #326891;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+}
+
+.bottom-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.bottom-link5 {
+    margin-right: 0 !important;
+
+}
+
+.bottom-links a:hover {
+    background: transparent;
+    border-color: lightgray;
+}
+
+/* Suggested Newsletter */
+.suggesed-newsletters-container {
+    margin-bottom: 100px;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.suggested-container {
+    width: 852px;
+    height: 100%;
+    background-color: white;
+    margin-right: 30px;
+}
+
+.suggested-container > div {
+    width: 100%;
+}
+
+.suggested, .more-in-space, .editors-picks {
+    border-top: 1px solid black;
+    margin-bottom: 30px;
+}
+
+
+
+.suggested > div:first-child, .more-in-space > div:first-child, .editors-picks > div:first-child, .popular-container > div:first-child {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggested > div:first-child > button {
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.suggestion-item {
+    border: 1px solid rgb(226, 226, 226);
+    width: 271px;
+    height: 293px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all .3s ease-in;
+
+}
+
+.suggestion-item:hover {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.suggestion-item > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.suggestion-items-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 11px;
+    background-color: lightgray;
+}
+
+.btn-suggested {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: black;
+    background-color: white;
+    transition: all .5s ease;
+}
+
+.material-add {
+    font-size: 24px !important;
+}
+
+.btn-suggested:hover {
+    color: white;
+    background-color: black;
+}
+
+.suggestion-info {
+    display: flex;
+    flex-flow: column;
+    line-height: 1.2rem;
+}
+
+.suggestion-info > span:first-child {
+    font-size: 11px;
+}
+
+.suggestion-info > strong {
+    font-size: 16px;
+    color: black;
+}
+
+.suggestion-info > span:last-child {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.suggestion-item > a {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-end;
+}
+
+.more-in-space > div:first-child > a {
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.more-in-space-items-container, .editors-picks-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 852px;
+    width: 100%;
+}
+
+.more-in-space-item, .editors-picks-item {
+    display: flex;
+    flex-flow: column;
+    max-width: 32%;
+    flex-basis: 32%;
+}
+
+.more-in-space-item > div:first-child, .editors-picks-item > div:first-child {
+    display: flex;
+    flex-flow: column;
+}
+
+.img-more-in-space, .img-editors-picks {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.more-in-space-item > div:first-child > span, .editors-picks-item > div:first-child > span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    color: #888;
+    text-align: right;
+}
+
+.more-in-space-item > h3, .editors-picks-item > h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding: 5px 0;
+    color: black;
+}
+
+.more-in-space-item > span, .editors-picks-item > span {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color: #888;
+}
+
+.editors-picks > div > strong {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.editors-picks > div > strong:hover {
+    text-decoration: underline;
+}
+
+/* Popular side */
+.popular-container {
+    width: 315px;
+    height: 100%;
+    background-color: white;
+}
+
+.popular-container > div:first-child {
+    border-top: 1px solid black;
+}
+
+.popular-item {
+    padding: 15px 0;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.popular-item > a {
+    color: black;
+    font-weight: 500;
+    font-size: 1.1875rem;
+    line-height: 1.4375rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.popular-item > a:hover {
+    color: #666;
+    text-decoration: none;
 }
 
 /* Footer */
