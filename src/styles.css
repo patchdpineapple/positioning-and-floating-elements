@@ -816,6 +816,8 @@ main article header h1 i{
     min-height: 467px;
     padding-bottom: 9px;
     border-bottom: 1px solid rgb(226, 226, 226);
+    -webkit-line-height: .4rem;
+    line-height: inherit;
 }
 
 .site-index::before {
