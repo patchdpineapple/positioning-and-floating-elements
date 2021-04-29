@@ -813,7 +813,7 @@ main article header h1 i{
 /* Site index */
 .site-index {
     width: 1200px;
-    height: 467px;
+    min-height: 467px;
     padding-bottom: 9px;
     border-bottom: 1px solid rgb(226, 226, 226);
 }
@@ -851,7 +851,7 @@ main article header h1 i{
     display: flex;
     flex-flow: column;
     width: 197px;
-    height: 400px;
+    min-height: 400px;
 }
 
 .site-links > h3, .subsribe-div > h3 {
