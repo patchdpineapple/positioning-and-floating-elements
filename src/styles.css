@@ -118,21 +118,26 @@ fieldset {
 
 .ul-nav li:last-child button {
     height: 32px;
-    background: #457293;
+    background-color: rgb(86, 123, 149);
     border-radius: 3px;
     padding: 10px;
-    border: 1px solid #326891;
+    border: 1px solid rgb(50, 104, 145);
     color: white;
     font-size: 10px;
     font-family: Helvetica, sans-serif;
     font-weight: 600;
     vertical-align: middle;
     margin-right: 5px;
+    transition: all .5s ease;
+}
+
+.ul-nav li:last-child button:hover {
+    background: rgb(50, 104, 145);
 }
 
 /***** Main Content *****/
 /* Header */
-main article {
+main > article {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -380,7 +385,6 @@ main article header h1 i{
 
 .text-container{
     margin: 0 20px;
-    border-top: 1px solid #ebebeb;
 }
 
 .text-container p {
@@ -556,8 +560,8 @@ main article header h1 i{
 
 .btn-read-comments {
     width: 330px;
-    background: #457293;
-    border: 1px solid #326891;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
     border-radius: 3px;
     padding: 10px;
     color: white;
@@ -566,6 +570,11 @@ main article header h1 i{
     font-weight: 600;
     vertical-align: middle;
     letter-spacing: 0.05em;
+    transition: all .5s ease;
+}
+
+.btn-read-comments:hover {
+    background-color: rgb(50, 104, 145);
 }
 
 .bottom-links a {
